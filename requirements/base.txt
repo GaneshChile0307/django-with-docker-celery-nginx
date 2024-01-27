@@ -1,0 +1,14 @@
+django==4.1.7                          #Framwework version
+django-environ==0.10.0                 #allows to configure env var for django app
+djangorestframework==3.14.0            #specifilly for rest-api using django
+django-cors-headers==3.14.0            #for interacting with front-end app and securing read req and res
+django-filter==22.1                    #filter support
+django-autoslug==1.9.8                 #use to create automated slug to django model 
+django-countries==7.5.1                #model and fixture top level country data
+django-phonenumber-field==7.0.2        #internal phone number support 
+phonenumbers==8.13.7                   #internal phone number support  
+drf-yasg==1.21.5                       #automated generation f swagger or openAI specs
+Pillow==9.4.0                          #image lib 
+argon2-cffi==21.3.0                     #password hashing
+pytz==2022.7.1                         #cross-platofrm time zone calculation
+django-taggit==3.1.0                    #resuable django app 

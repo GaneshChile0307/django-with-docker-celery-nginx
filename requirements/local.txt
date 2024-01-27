@@ -1,0 +1,7 @@
+-r base.txt
+
+psycopg2-binary==2.9.5             #database adapter for postgres
+
+flake8==6.0.0                       #quality of python code 
+black==23.1.0                       #python cod formatter
+isort==5.12.0                       #sorts python imports automatically            

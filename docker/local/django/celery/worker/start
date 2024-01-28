@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -o errexit
+set -o nounset
+
+#exec is used to replace current shell process with watch ,wtch used only in dev mode
+#main entry point of celery cmd line tool -> celery.__main__.main
+exec watchfiles celery.__main__.main --args '-A authors_api.celery worker -l INFO'

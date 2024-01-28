@@ -1,7 +1,6 @@
-POSTGRES_HOST=dpserver.postgres.database.azure.com
+POSTGRES_HOST=
 POSTGRES_PORT=5432
 POSTGRES_DB=project1
 POSTGRES_USER=ganesh
 POSTGRES_PASSWORD=Pass123456
-# DATABASE_URL=postgres://alphaogilo:Pass123456@postgres:5432/authors-live
-# DATABASE_URL=postgres://ganesh@dpserver.postgres.database.azure.com:5432/project1
+

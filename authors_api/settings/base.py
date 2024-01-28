@@ -1,13 +1,14 @@
 from pathlib import Path
 import environ
 
-env = environ.Env()
+envs = environ.Env()
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 ROOT_DIR = Path(__file__).resolve().parent.parent.parent
 APP_DIR =ROOT_DIR / "core_apps"
 
-DEBUG= env.bool("DJANO_DEBUG", False)
+DEBUG= envs.bool("DJANO_DEBUG", False)
 
 DJANGO_APPS = [
     "django.contrib.admin",
@@ -81,8 +82,17 @@ WSGI_APPLICATION = "authors_api.wsgi.application"
 # }
 
 
-DATABASES = {"default": env.db("DATABASE_URL")}
-
+DATABASES = {"default": envs.db("DATABASE_URL")}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'project1',
+#         'USER': 'ganesh',
+#         'PASSWORD': 'Pass123456',
+#         'HOST': 'dpserver.postgres.database.azure.com',
+#         'PORT': '5432',
+#     }
+# }
 
 #DATBASES = {"default":env.db("DATABASE_URL")}
 PASSWORD_HASHERS = [
@@ -118,7 +128,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = "en-us"
 
-TIME_ZONE = "Europe/Frankfurt"
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
@@ -145,6 +155,7 @@ MEDIA_ROOT = str(ROOT_DIR / "mediafiles")
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 CORS_URLS_REGEX = r"^api/.*$"
+AUTH_USER_MODEL="users.User"
 
 
 

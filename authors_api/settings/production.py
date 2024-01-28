@@ -1,5 +1,5 @@
 from .base import * #noqa #to ignore this 
-from .base import env
+from .base import envs
 
 ADMINS=[("Ganesh Rajaram Chile" , "ganeshchile0307@gmail.com") ]
 

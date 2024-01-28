@@ -12,3 +12,7 @@ Pillow==9.4.0                          #image lib
 argon2-cffi==21.3.0                     #password hashing
 pytz==2022.7.1                         #cross-platofrm time zone calculation
 django-taggit==3.1.0                    #resuable django app 
+redis==4.5.1                            #use for caching along with nginx
+celery==5.2.7                           #use for webs server porxy and load balancing     
+flower==1.2.0                          #used alog with flower
+django-celery-email==3.0.0             #for email

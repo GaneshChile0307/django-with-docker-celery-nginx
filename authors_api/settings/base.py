@@ -169,6 +169,7 @@ if USE_TZ:
 
 
 
+
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": [
         "dj_rest_auth.jwt_auth.JWTCookieAuthentication",
@@ -193,8 +194,8 @@ SIMPLE_JWT = {
 
 REST_AUTH = {
     "USE_JWT": True,
-    "JWT_AUTH_COOKIE": "project1-access-token",
-    "JWT_AUTH_REFRESH_COOKIE": "project1-refresh-token",
+    "JWT_AUTH_COOKIE": "authors-access-token",
+    "JWT_AUTH_REFRESH_COOKIE": "authors-refresh-token",
     "REGISTER_SERIALIZER": "core_apps.users.serializers.CustomRegisterSerializer",
 }
 
